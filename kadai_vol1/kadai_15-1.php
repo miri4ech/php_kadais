@@ -1,4 +1,4 @@
-<form name="form1" action="kadai15-2.php" method="post">
+<form name="form1" action="kadai_15-2.php" method="post">
 	氏名：<input type="text" name="name"><br />
 	誕生日：<input type="text" name="birthday"><br />
 	身長：<input type="text" name="height">cm<br />
