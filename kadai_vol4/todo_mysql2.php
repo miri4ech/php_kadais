@@ -4,7 +4,12 @@
 	$user = "test";
 	$password = "test";
 	$db = new PDO($dsn,$user,$password);
-	$db->exec("SET memo utf8");
+	$db->exec("SET NAMES utf8");
+
+/*-- 追加 --*/
+	// テーブル作成用SQL
+	$db->exec("CREATE TABLE IF NOT EXISTS items2 (todo_id INTEGER PRIMARY KEY AUTO_INCREMENT,memo TEXT,level TEXT,flag TEXT,ctime INTEGER)");
+/*-- 追加 fin --*/
 
 	//------------------------------------------
 	//TODOを追加する
