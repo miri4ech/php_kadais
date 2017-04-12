@@ -26,15 +26,17 @@
 			break;
 		case 3:
 			$operator = "÷";
-			$result = $fig1/$fig2;
+			if ($fig2 == 0){
+				$result = "ゼロ除算"; 
+			}else{
+				$result = $fig1/$fig2;
+			}
 			break;
 		case 4:
 			$operator = "×";
 			$result = $fig1*$fig2;
 			break;
 	}
-
-	if($result=="")$result=0;
 
 	if($fig1!=null&&$fig2!=null){
 		echo "結果： $fig1 $operator $fig2 = $result";
