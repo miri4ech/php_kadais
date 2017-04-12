@@ -35,8 +35,7 @@
 	}
 
 	if($result=="")$result=0;
-	
+
 	if($fig1!=null&&$fig2!=null){
 		echo "結果： $fig1 $operator $fig2 = $result";
 	}
-?>

@@ -11,4 +11,3 @@
 	$ary["ten"]   = 10;
 	
 	echo $ary["five"];
-?>

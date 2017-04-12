@@ -4,6 +4,6 @@
 		echo rand(1,10);
 	?>	
 </div>
-<?php echo "です！"; ?>
+<?php echo "です！";
 
 

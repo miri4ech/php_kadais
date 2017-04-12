@@ -9,4 +9,3 @@
 	echo "誕生日は{$birthday}で、身長は{$height}cmです。";
 	echo "<br />";
 	echo "今日のラッキーナンバーは{$lucky_number}です！";
-?>

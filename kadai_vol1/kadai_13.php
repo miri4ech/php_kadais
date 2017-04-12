@@ -6,4 +6,3 @@
 	);
 	$index = rand(0,count($msg)-1);
 	echo $msg[$index];
-?>
