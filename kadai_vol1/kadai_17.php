@@ -11,7 +11,7 @@
 	<input type="submit" value="計算">
 </form>
 
-<?php 
+<?php
 	$fig1 = $_POST['figure1'];
 	$fig2 = $_POST['figure2'];
 	$culc = $_POST['culc'];
@@ -34,7 +34,8 @@
 			break;
 	}
 
-	if($fig1&&$fig2){
+	if($result=="")$result=0;
+	if($fig1!=null&&$fig2!=null){
 		echo "結果： $fig1 $operator $fig2 = $result";
 	}
 ?>
