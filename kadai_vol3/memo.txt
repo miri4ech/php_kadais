@@ -1,0 +1,7 @@
+メモ：課題_第3弾にあたり、DBのカラム設定を変更しました。
+
+DB名:test
+table:users
+《変更点》
+- id -> auto incrementに変更
+- area/gender -> null許可

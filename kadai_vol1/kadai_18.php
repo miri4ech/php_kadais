@@ -11,7 +11,7 @@
 		"nine" 	=> 9,
 		"ten" 	=> 10
 	);
-	foreach ($ary as $key => $val) {
+	foreach ($ary as $key => &$val) {
 		if($val%3 == 0){
 			switch ($val) {
 				case 3:
@@ -28,4 +28,5 @@
 		echo "英語の{$key}は、「{$val}」";
 		echo "<br />";
 	}
+	unset($val);
 ?>
