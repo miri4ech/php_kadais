@@ -55,8 +55,8 @@
 
 	//二重投稿防止
 	if($_SERVER['REQUEST_METHOD']==='POST'){
-		//kunisadaのlocalhostの設定
-		header('Location:http://local-tasks.com/kadai_vol4/todo_mysql2.php');	
+		$host = $_SERVER['HTTP_HOST'];
+		header("Location:http://$host/kadai_vol4/todo_mysql2.php");	
 	}
 ?>
 

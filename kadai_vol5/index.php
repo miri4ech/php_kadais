@@ -7,11 +7,12 @@
             $validate['login'] = 'NG';
         }
 
+		$host = $_SERVER['HTTP_HOST'];
         if($validate['login'] == 'OK'){
-            header('Location: http://local-tasks.com/kadai_vol5/items.php');
+            header("Location: http://$host/kadai_vol5/items.php");
             exit();
         }else if($validate['login'] == 'NG'){
-            header('Location: http://local-tasks.com/kadai_vol5/error.html');
+            header("Location: http://$host/kadai_vol5/error.html");
             exit();      
         }
     }
