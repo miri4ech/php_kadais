@@ -45,6 +45,13 @@
 		<p>$memo</p>
 		</td></tr>";
 	}
+
+	//二重投稿防止
+	if($_SERVER['REQUEST_METHOD']==='POST'){
+		$host = $_SERVER['HTTP_HOST'];
+		header("Location: http://$host/kadai_vol5/items.php");	
+	}
+	
 ?>
 
 <html>
@@ -69,12 +76,10 @@
 				</form>		
 			</div>
 			<div class="list">
-				 <?php if(!empty($_POST)): ?>
-					<h1>画像リスト</h1>
-					<table>
+				<h1>画像リスト</h1>
+				<table>
 					<?php echo $list; ?>
-					</table>
-				<?php endif; ?>	
+				</table>
 			</div>			
 		</dir>
 	</body>
